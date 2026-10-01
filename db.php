@@ -2,7 +2,7 @@
 $host = "localhost";   // Database host
 $user = "root";        // Database username (default in XAMPP is root)
 $pass = "";            // Database password (default in XAMPP is empty)
-$db   = "document_db"; // Database name
+$db   = "documentsys_db"; // Database name
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $db);

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2026 at 05:36 AM
+-- Generation Time: Oct 01, 2026 at 09:16 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `document_db`
+-- Database: `documentsys_db`
 --
 
 -- --------------------------------------------------------
@@ -182,7 +182,8 @@ INSERT INTO `communications` (`id`, `user_id`, `com_id`, `date_received`, `sende
 (17, 5, '17', '2025-01-20', 'CHED Region 7', 'Request for validation.', 'LICENSE DIVISION', '2025-01-20 00:00:00', 'Atty. Franco', 'APPROPRIATE ACTION', 'Processing.', NULL, '2025-12-11 03:02:39', NULL),
 (18, 5, '18', '2025-01-21', 'Lapu-Lapu City Hall', 'Support letter for project.', 'GRACE ATTY. TERENCE', '2025-01-21 00:00:00', 'Ms. Santos', 'TAKE UP WITH ME', 'For review.', NULL, '2025-12-11 03:02:39', NULL),
 (19, 5, '19', '2025-01-22', 'Barangay Cotcot', 'Clarification on tax dues.', 'LANDTAX DIVISION', '2025-01-22 00:00:00', 'Mr. Perez', 'APPROPRIATE ACTION', 'Forwarded.', NULL, '2025-12-11 03:02:39', NULL),
-(20, 5, '20', '2025-01-23', 'Cebu Water District', 'Follow-up on unpaid accounts.', 'CASH DIVISION', '2025-01-23 00:00:00', 'Ms. Gomez', 'U-R-G-E-N-T', NULL, NULL, '2025-12-11 03:02:39', NULL);
+(20, 5, '20', '2025-01-23', 'Cebu Water District', 'Follow-up on unpaid accounts.', 'CASH DIVISION', '2025-01-23 00:00:00', 'Ms. Gomez', 'U-R-G-E-N-T', NULL, NULL, '2025-12-11 03:02:39', NULL),
+(79, 5, '21', '2026-01-06', 'Barangay Tayud', 'Asdasdhsi d 1 sdd', 'Neil M. Alferez', '2026-01-06 12:40:17', 'Atty. Franco', 'TAKE UP WITH ME', 'asdsadas', '2026-01-06 12:41:12', '2026-01-06 04:40:02', '55 seconds ago');
 
 -- --------------------------------------------------------
 
@@ -229,8 +230,8 @@ INSERT INTO `documents` (`id`, `user_id`, `control_no`, `payee`, `description`, 
 (96, 5, '15', 'I.T Services Co.', 'Software license renewal', 12500.00, '2025-01-16 14:55:00', '2025-12-11 00:40:29', 'Special Fund', NULL, NULL, NULL, NULL, '47618', '2025-12-11 03:57:28'),
 (97, 5, '16', 'ACLC Rentals', 'Tent and chairs rental', 6500.00, '2025-01-17 15:33:00', '2025-12-11 00:40:26', 'General', NULL, NULL, NULL, NULL, '47618', '2025-12-11 03:57:28'),
 (98, 5, '17', 'Office Fixers', 'Aircon maintenance', 4200.00, '2025-01-18 08:22:00', '2025-12-11 00:40:23', 'General', NULL, NULL, NULL, NULL, NULL, '2025-12-11 03:57:28'),
-(99, 5, '18', 'Tech Parts', 'Computer parts purchase', 8500.00, '2025-01-19 09:10:00', '2025-12-11 00:40:20', 'General', NULL, NULL, NULL, NULL, '95250', '2025-12-11 03:57:28'),
-(100, 5, '19', 'Mandaue Transport', 'Vehicle fuel assistance', 4500.00, '2025-01-20 10:28:00', '2025-12-11 00:40:16', 'General', NULL, NULL, NULL, NULL, NULL, '2025-12-11 03:57:28'),
+(99, 5, '18', 'Tech Parts', 'Computer parts purchase', 8500.00, '2025-01-19 09:10:00', '2026-01-07 10:23:45', 'General', 'Land Bank', '2026-01-07 00:00:00', 'Check Release', '00000102', '78451', '2025-12-11 03:57:28'),
+(100, 5, '19', 'Mandaue Transport', 'Vehicle fuel assistance', 4500.00, '2025-01-20 10:28:00', '2026-01-07 10:22:53', 'General', 'Land Bank', '2026-01-07 00:00:00', 'Check Out', '00000101', '21611', '2025-12-11 03:57:28'),
 (101, 5, '20', 'Security Guard Co.', 'Security service payment', 19000.00, '2025-01-21 11:40:00', '2025-12-11 00:40:01', 'Special Fund', 'Land Bank', '2025-12-11 00:00:00', 'Check Out', '31528139', '15970', '2025-12-11 03:57:28');
 
 -- --------------------------------------------------------
@@ -339,7 +340,14 @@ INSERT INTO `login_logs` (`id`, `user_id`, `username`, `role`, `login_time`) VAL
 (91, 5, 'mcky', 'encoder', '2026-01-05 10:33:04'),
 (92, 1, 'admin', 'admin', '2026-01-05 16:54:46'),
 (93, 5, 'mcky', 'encoder', '2026-01-05 17:03:18'),
-(94, 1, 'admin', 'admin', '2026-01-05 17:07:34');
+(94, 1, 'admin', 'admin', '2026-01-05 17:07:34'),
+(95, 5, 'mcky', 'encoder', '2026-01-06 04:37:56'),
+(96, 1, 'admin', 'admin', '2026-01-06 04:38:15'),
+(97, 5, 'mcky', 'encoder', '2026-01-07 02:00:54'),
+(98, 5, 'mcky', 'encoder', '2026-01-07 02:41:10'),
+(99, 5, 'mcky', 'encoder', '2026-01-07 03:13:56'),
+(100, 5, 'mcky', 'encoder', '2026-06-03 13:17:17'),
+(101, 1, 'admin', 'admin', '2026-06-03 13:21:42');
 
 -- --------------------------------------------------------
 
@@ -388,7 +396,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `first_name`, `middle_initial`, `last_name`, `username`, `email`, `password`, `role`, `status`, `permissions`, `created_at`) VALUES
 (1, 'Admin', 'A.', 'Administrator', 'admin', 'user1@example.com', 'admin123', 'admin', '', NULL, '2025-10-29 03:21:47'),
 (3, 'Example', 'M.', 'Sample', 'encoder', 'user3@example.com', 'encoder123', 'encoder', '', '[]', '2025-10-29 03:35:55'),
-(5, 'Neil', 'M.', 'Alferez', 'mcky', 'user5@example.com', 'neil123', 'encoder', 'Active', '[\"voucher_records\",\"check_records\",\"communications_records\",\"activity_records\",\"certificate_records\",\"delete_records\"]', '2025-11-11 06:26:55'),
+(5, 'Neil', 'M.', 'Alferez', 'mcky', 'user5@example.com', 'neil123', 'encoder', '', '[\"voucher_records\",\"check_records\",\"communications_records\",\"activity_records\",\"certificate_records\"]', '2025-11-11 06:26:55'),
 (6, 'Marc', 'M.', 'Epe', 'marcky', 'marc@gmail.com', 'marc123', 'encoder', 'Active', NULL, '2025-11-24 03:52:03'),
 (7, 'Johnna', 'M', 'Quevedo', 'johnna', 'johnna@gmail.com', 'johnna123', 'encoder', 'Active', NULL, '2025-11-24 11:05:04'),
 (10, 'Diane', 'M', 'Alferez', 'diane', 'diane@gmail.com', 'diane123', 'encoder', 'Active', '0', '2025-11-24 11:46:10');
@@ -510,7 +518,14 @@ INSERT INTO `user_activity_logs` (`id`, `user_id`, `full_name`, `action`, `modul
 (125, 5, 'Neil M. Alferez', 'Updated Out Form details', 'Communication Records', 78, '22', 'Out form details updated, ComID: 22', '2026-01-06 00:25:11'),
 (126, 5, 'Neil M. Alferez', 'Updated Out Form details', 'Communication Records', 78, '22', 'Out form details updated, ComID: 22', '2026-01-06 00:25:26'),
 (127, 5, 'Neil M. Alferez', 'Deleted Voucher Record', 'Document Voucher Records', 120, '21', 'Deleted Voucher Record, Control No: 21', '2026-01-06 01:38:45'),
-(128, 5, 'Neil M. Alferez', 'Deleted Voucher Record', 'Document Voucher Records', 88, '7', 'Deleted Voucher Record, Control No: 7', '2026-01-06 01:41:28');
+(128, 5, 'Neil M. Alferez', 'Deleted Voucher Record', 'Document Voucher Records', 88, '7', 'Deleted Voucher Record, Control No: 7', '2026-01-06 01:41:28'),
+(129, 5, 'Neil M. Alferez', 'Added Communication Record', 'Communication Records', 0, '21', 'New communication record added, Communication ID: 21.', '2026-01-06 12:40:02'),
+(130, 5, 'Neil M. Alferez', 'Updated Out Form details', 'Communication Records', 79, '21', 'Out form details updated, ComID: 21', '2026-01-06 12:40:17'),
+(131, 5, 'Neil M. Alferez', 'Took action on indorsed record', 'Communication Records', 79, '21', 'Action taken on indorsed record at 2026-01-06 12:41:12 (Duration: 55 seconds ago), ComID: 21', '2026-01-06 12:41:12'),
+(132, 5, 'Neil M. Alferez', 'Updated Check Record', 'Check Document Records', 100, '00000101', 'Check record updated, Document ID', '2026-01-07 10:22:38'),
+(133, 5, 'Neil M. Alferez', 'Checked Out Document', 'Check Document Records', 100, '19', 'Document marked as checked out, Check Num', '2026-01-07 10:22:53'),
+(134, 5, 'Neil M. Alferez', 'Updated Check Record', 'Check Document Records', 99, '00000102', 'Check record updated, Document ID', '2026-01-07 10:23:42'),
+(135, 5, 'Neil M. Alferez', 'Released Document', 'Check Document Records', 99, '18', 'Document marked as check released, Check Num', '2026-01-07 10:23:45');
 
 -- --------------------------------------------------------
 
@@ -629,7 +644,7 @@ ALTER TABLE `certificate_records`
 -- AUTO_INCREMENT for table `communications`
 --
 ALTER TABLE `communications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT for table `documents`
@@ -641,7 +656,7 @@ ALTER TABLE `documents`
 -- AUTO_INCREMENT for table `login_logs`
 --
 ALTER TABLE `login_logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT for table `password_resets`
@@ -659,7 +674,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `user_activity_logs`
 --
 ALTER TABLE `user_activity_logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 
 --
 -- AUTO_INCREMENT for table `website_settings`
